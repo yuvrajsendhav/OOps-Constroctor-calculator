@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOps calci</title>
+</head>
+<body>
+    <script>
+        class Calculator {
+        
+        constructor(a,b)
+         {
+        this.first=a;
+        this.second=b;
+        this.sum=function()
+         {
+            return(this.first+this.second);       
+            
+        }
+
+        this.sub=function()
+        {
+            return(this.first-this.second);       
+            
+        }
+
+        this.mult=function()
+        {
+            return(this.first*this.second);       
+            
+        }
+
+        this.div=function()
+        {
+            return(this.first/this.second);       
+            
+        }
+       
+    }
+}
+        var a=parseInt(prompt("Enter 1st no"));
+        var b=parseInt(prompt("Enter 1st no"));
+         let obj=new Calculator(a,b);
+         document.write("sum="+obj.sum()+"<br>");
+         document.write("sub="+obj.sub()+"<br>");
+         document.write("mult="+obj.mult()+"<br>");
+         document.write("div="+obj.div()+"<br>");
+          
+          //obj.display();
+         
+        
+        /* var x=obj.sub()
+        document.write("Sub="+x);*/
+        
+         
+ </script>
+</body>
+</html>
